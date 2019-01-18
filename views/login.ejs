@@ -1,0 +1,41 @@
+<% include ./partials/header.ejs %>
+<div class="ui placeholder segment">
+  <div class="ui two column stackable center aligned grid">
+    <div class="ui vertical divider">Or</div>
+    <div class="middle aligned row">
+      <div class="column">
+        <form action="" class="ui fluid form">
+          <h1 class="ui header">Login</h1>
+
+          <div class="ui large label">Username</div>
+          <input type="text" />
+          <div class="ui divider"></div>
+          <div class="ui large label">Password</div>
+          <input type="password" />
+          <div class="ui divider"></div>
+          <button class="ui inverted green button">Login</button>
+        </form>
+      </div>
+      <div class="column">
+        <form action="/register" method="POST" class="ui fluid form">
+          <h1 class="ui header">Register</h1>
+          <div class="ui large label">Username</div>
+          <input type="text" placeholder="Username" name="username" />
+          <div class="ui divider"></div>
+          <div class="ui large label">E-Mail</div>
+          <input type="text" placeholder="example@hotmail.com" name="email" />
+          <div class="ui divider"></div>
+          <div class="ui large label">Employer</div>
+          <input type="text" placeholder="Equinor" name="company" />
+          <div class="ui divider"></div>
+          <div class="ui large label">Password</div>
+          <input type="password" placeholder="Password" name="password" />
+          <div class="ui divider"></div>
+          <button class="ui inverted teal button">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>

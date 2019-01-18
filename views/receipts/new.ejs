@@ -1,0 +1,33 @@
+<% include ../partials/header.ejs %>
+
+<div class="ui container">
+  <h1 class="ui teal inverted header" id="toph1">Register A New Receipt</h1>
+  <form action="/receipts/new" method="POST" class="ui form">
+    <a class="ui teal label">Author</a>
+    <input type="text" name="receipt[author]" placeholder="Name" />
+    <div class="ui divider"></div>
+
+    <a class="ui teal label">Description</a>
+    <input
+      type="text"
+      name="receipt[desc]"
+      placeholder="Description of what you bought"
+    />
+    <div class="ui divider"></div>
+    <a class="ui teal label">Name of Company Used</a>
+    <input type="text" name="receipt[company]" placeholder="Company Used" />
+    <div class="ui divider"></div>
+    <a class="ui teal label">The total amount of Money Used</a>
+    <input type="text" name="receipt[totalUsed]" placeholder="Example: 500kr" />
+    <div class="ui divider"></div>
+    <input type="text" name="receipt[image]" placeholder="Link to Image here" />
+    <div class="ui divider"></div>
+    <div class="buttons">
+      <a href="/receipts"> <button class="ui gray button">Cancel</button> </a>
+      <a href="/receipts">
+        <button class="ui green button">Register</button>
+      </a>
+    </div>
+  </form>
+</div>
+<% include ../partials/footer.ejs %>

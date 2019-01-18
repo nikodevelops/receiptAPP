@@ -1,0 +1,51 @@
+<% include ../partials/header.ejs %>
+<div class="ui center aligned container">
+  <h1 class="ui teal inverted header">
+    Created By <%=receipt.author%>
+    <div class="sub header">
+     <%if(receipt.approved){%>
+       <p style="color:green">This Receipt has been Approved by <%=receipt.author%></p>
+     <%}else{%>
+      <p style="color:red">This Receipt has not been Approved!</p>
+     <%}%>
+  </h1>
+  <div class="ui inverted segment">
+    <div class="inline field">
+      <div class="ui right pointing teal basic label">Description:</div>
+      <%=receipt.desc%>
+    </div>
+    <div class="ui divider"></div>
+    <div class="inline field">
+      <div class="ui right pointing teal basic label">Company Used:</div>
+      <%=receipt.company%>
+    </div>
+    <div class="ui divider"></div>
+    <div class="inline field">
+      <div class="ui right pointing teal basic label">Money Used:</div>
+      <%=receipt.totalUsed%>
+    </div>
+    <div class="ui divider"></div>
+    <div class="inline field">
+        <div class="ui right pointing teal basic label">Receipt Proof:</div>
+         <a href="/receipts/:id/proof" target="_blank">Click Me!</a>
+      </div>
+      <div class="ui divider"></div>
+    <div class="inline field">
+      <div class="ui right pointing teal basic label">Date Created:</div>
+      <%=receipt.created.toDateString()%>
+    </div>
+    <div class="ui buttons">
+      <button class="ui inverted red button">Denied</button>
+      <div class="or"></div>
+      <button class="ui inverted green button">Approve</button>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui buttons">
+        <button class="ui gray button" id="left">Back</button>
+        <button class="ui orange button" id="right">Next</button>
+      </div>
+  </div>
+ 
+
+</div>
+<% include ../partials/footer.ejs %>

@@ -1,0 +1,53 @@
+#toph1 {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+#registerLabel {
+  margin: 0px 30%;
+}
+.confirmedLabels {
+  margin: 0px 30%;
+}
+form {
+  width: 50%;
+  margin: 100px auto;
+}
+.buttons {
+  margin: 0px 30%;
+}
+.ui.content {
+  margin: 0 auto;
+}
+body {
+  background: #0052d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+  margin: 0;
+  padding: 0;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#centered {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.ui.right.pointing.teal.basic.label {
+  float: left;
+}
+.ui.inverted.segment {
+  width: 30%;
+  margin: 0 auto;
+}
+.ui.buttons {
+  margin: 25px;
+}
+#left {
+  float: left;
+}
+#right {
+  float: right;
+}
